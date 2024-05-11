@@ -11,7 +11,10 @@
 
     {{> Navbar }}
 
-    <h1 class="text-center">Bienvenido al Mercado Web</h1>
+    {{#if primerIngreso}}
+      <h1 class="text-center">Bienvenido al Mercado Web</h1>
+    {{/if}}
+
     <main class="d-flex justify-content-center">    
         {{> Producto}}
     </main>

@@ -21,10 +21,7 @@ app.engine(
 
 app.use('/css',      express.static(__dirname + '/node_modules/bootstrap/dist/css'));
 app.use('/cssjs',    express.static(__dirname + '/node_modules/bootstrap/dist/js'));
-// app.use('/popover', express.static(__dirname + '/node_modules/bootstrap/js/dist'));
 app.use('/jquery',   express.static(__dirname + '/node_modules/jquery/dist'));
-
-    
 
 app.get('/',(req,res)=>{
     res.render('Dashboard',{
@@ -33,7 +30,8 @@ app.get('/',(req,res)=>{
             'banana','cebollas',
             'lechuga', 'papas',
             'pimenton', 'tomate'
-        ]
+        ],
+        primerIngreso:true,
     })
 });
 
