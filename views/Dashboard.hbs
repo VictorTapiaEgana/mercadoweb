@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/carrito.png" type="image/png">
+    <link rel="stylesheet" href="/css/bootstrap.css" />
+    <title>Minimarket</title>
+</head>
+<body>
+
+    {{> Navbar }}
+
+    <main class="d-flex justify-content-center">    
+        {{> Producto}}
+    </main>
+
+    {{> Footer}}
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Detalle de Producto</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="imagenProducto" src="" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="/cssjs/bootstrap.bundle.js"></script>
+<script src="/jquery/jquery.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
